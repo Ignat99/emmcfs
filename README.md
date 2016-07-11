@@ -3,7 +3,15 @@ eMMCFS -- Samsung eMMC chip oriented File System
 
 # links
 
+## OSRC
+
+http://opensource.samsung.com/reception/receptionSub.do?method=sub&sub=T&menu_item=tv_n_video&classification1=tv&classification2=dtv&classification3=LED
+
+## forum.samygo.tv
+
 http://forum.samygo.tv/viewtopic.php?t=5993
+
+## vulnerability
 
 http://www.sciencedirect.com/science/article/pii/S1742287615000134
 
