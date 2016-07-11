@@ -1,0 +1,13 @@
+CID,Checker,Classification,Owner,Severity,Action,Function,File,Final Event,Final Event Description
+4513,REVERSE_INULL,Uninspected,Unassigned,Unknown,Undecided,emmcfs_alloc_inode,/usr/src/linux-2.6.37/fs/emmcfs/super.c,deref_ptr,"Directly dereferenced pointer ""inode"""
+4512,REVERSE_INULL,Uninspected,Unassigned,Unknown,Undecided,fsm_btree_delete,/usr/src/linux-2.6.37/fs/emmcfs/fsm_btree.c,deref_ptr,"Directly dereferenced pointer ""node"""
+4511,REVERSE_INULL,Uninspected,Unassigned,Unknown,Undecided,emmcfs_mark_bnode_dirty,/usr/src/linux-2.6.37/fs/emmcfs/bnode.c,deref_ptr,"Directly dereferenced pointer ""node"""
+4510,NULL_RETURNS,Uninspected,Unassigned,Unknown,Undecided,emmcfs_add_to_snapshot,/usr/src/linux-2.6.37/fs/emmcfs/snapshot.c,dereference,"Dereferencing NULL value ""pages"""
+4509,NULL_RETURNS,Uninspected,Unassigned,Unknown,Undecided,emmcfs_truncate_blocks,/usr/src/linux-2.6.37/fs/emmcfs/file.c,dereference,"Dereferencing NULL value ""key"""
+4508,NEGATIVE_RETURNS,Uninspected,Unassigned,Unknown,Undecided,kmalloc_slab,/usr/src/linux-2.6.37/include/linux/slub_def.h,negative_returns,"Tracked variable ""index"" used as index to array ""kmalloc_caches"""
+4507,MISSING_RETURN,Uninspected,Unassigned,Unknown,Undecided,emmcfs_write_begin,/usr/src/linux-2.6.37/fs/emmcfs/inode.c,missing_return,Reached end of path without returning a value
+4506,FORWARD_NULL,Uninspected,Unassigned,Unknown,Undecided,emmcfs_restore_snapshot,/usr/src/linux-2.6.37/fs/emmcfs/snapshot.c,var_deref_op,"Variable ""pages"" tracked as NULL was dereferenced."
+4505,FORWARD_NULL,Uninspected,Unassigned,Unknown,Undecided,emmcfs_readdir,/usr/src/linux-2.6.37/fs/emmcfs/inode.c,var_deref_model,"Variable ""bnode"" tracked as NULL was passed to function ""emmcfs_put_bnode"" that dereferences it."
+4504,FORWARD_NULL,Uninspected,Unassigned,Unknown,Undecided,btree_find,/usr/src/linux-2.6.37/fs/emmcfs/btree.c,var_deref_model,"Variable ""record"" tracked as NULL was passed to function ""get_child_bnode"" that dereferences it."
+4503,DEADCODE,Uninspected,Unassigned,Unknown,Undecided,update_metadata,/usr/src/linux-2.6.37/fs/emmcfs/inode.c,dead_error_begin,"Cannot reach dead statement ""sbi->snapshot_info->flags = 0;"""
+4502,DEADCODE,Uninspected,Unassigned,Unknown,Undecided,kmalloc_index,/usr/src/linux-2.6.37/include/linux/slub_def.h,dead_error_line,"Cannot reach dead statement ""return 3;"""

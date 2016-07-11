@@ -32,7 +32,9 @@ cd emmcfs
 
 cp include/linux/fs.h /usr/src/linux-3.8.13/include/linux/
 
-rm -r include
+rm -r ./include
+
+rm -r ./element
 
 make O=/home/name/build/kernel
 
