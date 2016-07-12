@@ -25,10 +25,17 @@ cd linux-3.8.13/fs
 
 git clone https://github.com/Ignat99/emmcfs.git
 
+# nccnav
+
+sudo apt-get install ncc
+
+cd emmcfs/element
+
+nccnav ./Code_out.map
 
 # compile
 
-cd emmcfs
+cd ..
 
 cp include/linux/fs.h /usr/src/linux-3.8.13/include/linux/
 
